@@ -22,7 +22,7 @@ WatchMe é uma aplicação que lista seus filmes favoritos. Este é um desafio d
 
 ## 🛠️ Features
 
-- [x] Listas de dfilmes
+- [x] Listas de filmes
 - [x] Filtrar por gêneros
 
 
