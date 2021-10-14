@@ -3,6 +3,13 @@ import { Button } from "./Button"
 
 import "../styles/sidebar.scss"
 
+// interface SideBarProps {
+//   id: number;
+//   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
+//   title: string;
+// }
+
+
 export function SideBar(props) {
   return(
     <nav className="sidebar">
