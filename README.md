@@ -14,7 +14,7 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=069446&labelColor=000000">
 </p>
 
-<img align="center" src="./src/assets/app-todo.png" slt="to.do" />
+<img align="center" src="./src/assets/watchme-project.png" slt="watchme"/>
 
 ## 💻 Projeto
 
@@ -22,7 +22,7 @@ WatchMe é uma aplicação que lista seus filmes favoritos. Este é um desafio d
 
 ## 🛠️ Features
 
-- [x] Listas filmes
+- [x] Listas de dfilmes
 - [x] Filtrar por gêneros
 
 
