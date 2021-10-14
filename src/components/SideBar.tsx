@@ -3,25 +3,34 @@ import { Button } from "./Button"
 
 import "../styles/sidebar.scss"
 
-// interface SideBarProps {
-//   id: number;
-//   name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-//   title: string;
-// }
+type Genre = {
+  id: number;
+  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
+  title: string;
+};
 
+type SideBarProps = {
+  genres: Genre[];
+  handleClickButton: (genreId: number) => void;
+  selectedGenreId: number;
+};
 
-export function SideBar(props) {
+export function SideBar({
+  genres,
+  handleClickButton,
+  selectedGenreId,
+}: SideBarProps) {
   return(
     <nav className="sidebar">
         <span>Watch<p>Me</p></span>
         <div className="buttons-container">
-        {props.genres.map(genre => (
+        {genres.map(genre => (
           <Button
             key={String(genre.id)}
             title={genre.title}
             iconName={genre.name}
-            onClick={()=>props.handleClickButton(genre.id)}
-            selected={props.selectedGenreId === genre.id}/>
+            onClick={()=> handleClickButton(genre.id)}
+            selected={selectedGenreId === genre.id}/>
         ))}
         </div>
     </nav>
